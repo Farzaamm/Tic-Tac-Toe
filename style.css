@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 6rem;
+    text-align: center;
+    /* background-color: aqua; */
+    padding: 1rem;
+}
+
+main {
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container {
+    /* border: 4px red solid; */
+    padding: 1rem;
+}
+
+.restart-btn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    border: none;
+    box-shadow: 3px 3px 5px rgb(188, 187, 187);
+    background-color: rgb(68, 238, 68);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.board {
+    background-color: rgb(36, 14, 232);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.square {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 7rem;
+    font-weight: 900;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.cover {
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    padding: 3rem 2rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 255, 17);
+    color: rgb(14, 149, 23);
+    cursor: pointer;
+}
+
+.congratulations {
+    position: absolute;
+    top: 35%;
+    width: 60%;
+    height: 30vh;
+    background-color: rgb(157, 236, 38);
+    box-shadow: 0 0 30px rgb(92, 241, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 700;
+    font-style: italic;
+    display: none;
+    border-radius: 25px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
